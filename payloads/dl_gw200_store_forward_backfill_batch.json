@@ -1,0 +1,34 @@
+{
+  "schema_ver": "2.1",
+  "device_id": "DL-GW200-HN08",
+  "model": "DL-GW200",
+  "is_backfill": true,
+  "batch_id": "BF-20261101-0042",
+  "remaining_flash_records": 18,
+  "records": [
+    {
+      "seq": 108449,
+      "ts_iso": "2026-11-01T14:29:30.000+07:00",
+      "ts_unix_ms": 1793518170000,
+      "slaves": [
+        {
+          "unit_id": 1,
+          "alias": "INVT_GD200A_PUMP_01",
+          "tags": { "freq_run_hz": 47.4, "current_out_a": 34.0, "fault_code": 0 }
+        }
+      ]
+    },
+    {
+      "seq": 108450,
+      "ts_iso": "2026-11-01T14:29:40.000+07:00",
+      "ts_unix_ms": 1793518180000,
+      "slaves": [
+        {
+          "unit_id": 1,
+          "alias": "INVT_GD200A_PUMP_01",
+          "tags": { "freq_run_hz": 47.5, "current_out_a": 34.1, "fault_code": 0 }
+        }
+      ]
+    }
+  ]
+}

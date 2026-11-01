@@ -1,0 +1,35 @@
+{
+  "device_info": {
+    "model": "DL-RS485",
+    "product_page": "https://devicelab.vn/san-pham/dl-rs485/",
+    "firmware": "v2.8.0-rtos",
+    "galvanic_isolation": "3000Vrms_Optical_Isolated_DC_DC"
+  },
+  "operating_mode": "MODBUS_TCP_TO_RTU_GATEWAY_WITH_READ_CACHE",
+  "network": {
+    "dhcp": false,
+    "static_ip": "192.168.1.200",
+    "subnet_mask": "255.255.255.0",
+    "gateway": "192.168.1.1",
+    "modbus_tcp_port": 502,
+    "max_tcp_clients": 8,
+    "tcp_idle_timeout_sec": 60
+  },
+  "serial_rs485": {
+    "baudrate": 19200,
+    "data_bits": 8,
+    "parity": "E",
+    "stop_bits": 1,
+    "frame_gap_t35_us": 2000,
+    "request_timeout_ms": 400,
+    "internal_120_ohm_termination": false
+  },
+  "unit_id_routing": [
+    {
+      "tcp_unit_id_min": 1,
+      "tcp_unit_id_max": 32,
+      "target_port": "RS485_PORT_1",
+      "read_cache_ttl_ms": 250
+    }
+  ]
+}

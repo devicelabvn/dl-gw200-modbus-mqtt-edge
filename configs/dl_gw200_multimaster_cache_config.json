@@ -1,0 +1,61 @@
+{
+  "device_info": {
+    "model": "DL-GW200",
+    "product_page": "https://devicelab.vn/san-pham/dl-gw200/",
+    "firmware": "v3.4.2-rtos",
+    "hardware_isolation": "3.0kVrms_Optical_600W_TVS_Surge"
+  },
+  "rs485_port_1": {
+    "baudrate": 9600,
+    "databits": 8,
+    "parity": "N",
+    "stopbits": 1,
+    "inter_frame_delay_ms": 20,
+    "response_timeout_ms": 500,
+    "retry_count": 2
+  },
+  "multimaster_cache_engine": {
+    "enabled": true,
+    "ram_cache_ttl_ms": 1000,
+    "modbus_tcp_server_port": 502,
+    "max_concurrent_tcp_masters": 8,
+    "priority_write_queue": true,
+    "description": "Serves SCADA/HMI Modbus TCP FC03/FC04 requests directly from RAM cache in <2ms while maintaining collision-free sequential polling on RS485 bus."
+  },
+  "store_and_forward_flash": {
+    "enabled": true,
+    "storage_medium": "SPI_NOR_FLASH_WEAR_LEVELED",
+    "max_records_capacity": 100000,
+    "overflow_policy": "RING_BUFFER_OVERWRITE_OLDEST",
+    "backfill_mqtt_topic": "devicelab/DL-GW200-HN08/backfill",
+    "backfill_batch_size": 10,
+    "backfill_rate_limit_ms": 250
+  },
+  "mqtt_uplink": {
+    "broker_host": "mqtt.devicelab.vn",
+    "broker_port": 8883,
+    "tls_version": "TLSv1.3",
+    "qos": 1,
+    "keepalive_sec": 60,
+    "realtime_topic": "devicelab/DL-GW200-HN08/telemetry",
+    "publish_interval_sec": 10
+  },
+  "polling_table": [
+    {
+      "unit_id": 1,
+      "alias": "INVT_GD200A_PUMP_01",
+      "function_code": 3,
+      "start_address_hex": "0x3000",
+      "register_count": 6,
+      "poll_interval_ms": 500
+    },
+    {
+      "unit_id": 2,
+      "alias": "SCHNEIDER_PM2230_MAIN",
+      "function_code": 3,
+      "start_address_hex": "0x0BB7",
+      "register_count": 20,
+      "poll_interval_ms": 1000
+    }
+  ]
+}

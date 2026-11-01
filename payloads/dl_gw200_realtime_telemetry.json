@@ -1,0 +1,45 @@
+{
+  "schema_ver": "2.1",
+  "device_id": "DL-GW200-HN08",
+  "model": "DL-GW200",
+  "fw_ver": "v3.4.2-rtos",
+  "seq": 108452,
+  "ts_iso": "2026-11-01T14:30:00.000+07:00",
+  "ts_unix_ms": 1793518200000,
+  "is_backfill": false,
+  "uplink": {
+    "interface": "4g_lte",
+    "rssi_dbm": -65,
+    "flash_queue_depth": 0
+  },
+  "slaves": [
+    {
+      "unit_id": 1,
+      "alias": "INVT_GD200A_PUMP_01",
+      "poll_status": "OK",
+      "poll_latency_ms": 18,
+      "tags": {
+        "freq_run_hz": 47.5,
+        "current_out_a": 34.2,
+        "voltage_out_v": 382.0,
+        "dc_bus_v": 538.4,
+        "fault_code": 0
+      }
+    },
+    {
+      "unit_id": 2,
+      "alias": "SCHNEIDER_PM2230_MAIN",
+      "poll_status": "OK",
+      "poll_latency_ms": 22,
+      "tags": {
+        "v_l1_n": 221.4,
+        "v_l2_n": 220.8,
+        "v_l3_n": 221.9,
+        "i_avg_a": 128.5,
+        "kw_total": 81.42,
+        "pf_total": 0.96,
+        "kwh_import": 458920.5
+      }
+    }
+  ]
+}
