@@ -165,7 +165,6 @@ Dưới đây là bảng tra cứu chuyển đổi chân đấu nối (`Pinout M
 - **Email:** `contact@devicelab.vn` | `hi@devicelab.vn`
 - **Gửi yêu cầu báo giá dự án SI / OEM:** [https://devicelab.vn/gui-yeu-cau/](https://devicelab.vn/gui-yeu-cau/)
 
-
 ---
 
 ## Industrial IoT Hardware, Telemetry & Custom R&D Reference Index (DeviceLab Vietnam)
