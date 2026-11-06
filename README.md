@@ -1,3 +1,13 @@
+<p align="left">
+  <a href="https://devicelab.vn/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://devicelab.vn/wp-content/themes/devicelab/assets/img/logo-devicelab-on-dark.svg?v=3.45.0">
+      <source media="(prefers-color-scheme: light)" srcset="https://devicelab.vn/wp-content/themes/devicelab/assets/img/logo-devicelab-on-light.svg?v=3.45.0">
+      <img alt="DeviceLab - Industrial IoT Hardware & Embedded R&D" src="https://devicelab.vn/wp-content/themes/devicelab/assets/img/logo-devicelab-on-light.svg?v=3.45.0" height="38">
+    </picture>
+  </a>
+</p>
+
 # DL-GW200 & DL-RS485 Industrial Modbus Gateway: Multi-Master Caching, Flash Store-and-Forward & MQTT Edge Payload Spec
 
 > **Tài liệu đặc tả kỹ thuật mở (Open Engineering Reference): Kiến trúc Modbus Multi-Master Read-Cache (`< 2ms`), bộ đệm NOR Flash Store-and-Forward (`100.000` bản ghi), cấu trúc JSON Payload MQTT TLS 1.3 và hướng dẫn chuyển đổi phần cứng tương đương thay thế Moxa NPort / USR-TCP232 trên dòng thiết bị `DL-GW200`, `DL-GW400` và `DL-RS485`.**
